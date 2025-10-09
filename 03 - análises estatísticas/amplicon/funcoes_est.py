@@ -29,74 +29,6 @@ def remove_prefix(taxa_name):
     if taxa_name == 'Outros':
         return taxa_name
     return taxa_name.split("__")[-1]
-    
-
-def taxonomia_extendida(artigo):
-    
-    if artigo in vaginal:
-        microbiota == 'vaginal'
-    elif artigo in intestinal:
-        microbiota == 'intestinal'
-    else:
-        print('Artigo não identificado.')
-    
-    data = pd.read_csv(f'{microbiota}/{artigo}/bar-plot_{artigo}.csv')
-    data = data.set_index("index")
-    data = data.apply(pd.to_numeric, errors="coerce")
-    data = data.rename(columns=extrair_ultimo_nome)
-    data = data.dropna(axis=1, how="all")
-
-    data_rel = data.div(data.sum(axis=1), axis=0)
-
-    metadata_path = f'{microbiota}/{artigo}/{artigo}_metadata.tsv'
-    metadata = pd.read_csv(metadata_path, sep='\t', index_col=0)
-    metadata.columns = ['Group']
-
-    data_to_sort = data_rel.join(metadata)
-
-    data_sorted = data_to_sort.sort_values(by=['Group', 'index'])
-
-    groups_sorted = data_sorted['Group']
-    data_for_plotting = data_sorted.drop(columns=['Group'])
-    
-    fig, ax = plt.subplots(figsize=(18, 7))
-    data_for_plotting_legend = data_for_plotting.rename(columns=remove_prefix)
-    data_for_plotting_legend.plot(kind="bar", stacked=True, width=0.8, ax=ax)
-
-    group_colors = {'controle': 'darkcyan', 'endo': 'goldenrod'}
-
-    n_samples = len(data_for_plotting)
-    n_control = (groups_sorted == 'controle').sum()
-
-    line_y = -0.3
-    text_y = -0.35
-
-    ax.hlines(y=line_y, xmin=-0.5, xmax=n_control - 0.5, 
-              color=group_colors['controle'], linewidth=5, 
-              transform=ax.get_xaxis_transform(), clip_on=False)
-    ax.text(x=(n_control - 1) / 2, y=text_y, s='Controle', 
-            ha='center', va='center', transform=ax.get_xaxis_transform())
-
-    if n_control < n_samples:
-        ax.hlines(y=line_y, xmin=n_control - 0.5, xmax=n_samples - 0.5, 
-                  color=group_colors['endo'], linewidth=5, 
-                  transform=ax.get_xaxis_transform(), clip_on=False)
-        ax.text(x=n_control + (n_samples - n_control - 1) / 2, y=text_y, s='Endometriose', 
-                ha='center', va='center', transform=ax.get_xaxis_transform())
-
-    ax.set_title(f"Composição Taxonômica - {artigo}")
-    ax.set_ylabel("Proporção Relativa das Leituras")
-    ax.set_xlabel("")
-    ax.set_ylim(0, 1)
-    ax.tick_params(axis='x', rotation=90)
-    ax.legend(bbox_to_anchor=(1.05, 1), loc='upper left', title="Taxa (Gênero)")
-
-    plt.subplots_adjust(bottom=0.25)
-
-    plt.show()
-    
-    return fig, ax
-
 
 
 def taxonomia(artigo, nivel="genero"):
@@ -118,7 +50,9 @@ def taxonomia(artigo, nivel="genero"):
     
     if nivel not in nivel_map:
         raise ValueError(f"Nível '{nivel}' inválido. Use: {list(nivel_map.keys())}")
-        
+
+    prefixo = nivel_map[nivel]
+
     def extrair_nivel(taxon):
         if pd.isna(taxon):
             return "NA"
@@ -127,8 +61,6 @@ def taxonomia(artigo, nivel="genero"):
             if p.startswith(prefixo):
                 return p
         return "NA"
-    
-    prefixo = nivel_map[nivel]
 
     data = pd.read_csv(f'{microbiota}/{artigo}/taxonomia_{artigo}.csv')
     data = data.set_index("index")
@@ -150,7 +82,7 @@ def taxonomia(artigo, nivel="genero"):
 
     metadata_path = f'{microbiota}/{artigo}/{artigo}_metadata.tsv'
     metadata = pd.read_csv(metadata_path, sep='\t', index_col=0)
-    metadata.columns = ['Group']
+    metadata = metadata.rename(columns={'group': 'Group'})
 
     data_to_sort = data_plot_prep.join(metadata)
     data_sorted = data_to_sort.sort_values(by=['Group'])
@@ -159,38 +91,43 @@ def taxonomia(artigo, nivel="genero"):
     
     n_taxa = len(data_for_plotting.columns)
     paleta = sns.color_palette("tab20", n_colors=n_taxa)
-
-    fig, ax = plt.subplots(figsize=(18, 7))
-    data_for_plotting_legend = data_for_plotting.rename(columns=remove_prefix)
-    data_for_plotting_legend.plot(kind="bar", stacked=True, width=0.8, ax=ax)
     
-    group_colors = {'controle': '#262626', 'endo': '#FF7F11'}
-    n_samples = len(data_for_plotting)
-    n_control = (groups_sorted == 'controle').sum()
+    def remove_prefix(name):
+        if pd.isna(name) or name in ["NA", ""]:
+            return "Indefinido"
+        for prefix in ["d__", "p__", "c__", "o__", "f__", "g__", "s__"]:
+            if isinstance(name, str) and name.startswith(prefix):
+                return name.replace(prefix, "")
+        return name
+    
+    data_for_plotting_legend = data_for_plotting.rename(columns=remove_prefix)
+
+    fig, ax = plt.subplots(figsize=(13, 7))
+    data_for_plotting_legend.plot(kind="bar", stacked=True, width=0.8, ax=ax, color=paleta)
+    
+    grupos_unicos = groups_sorted.unique()
+    group_colors = sns.color_palette("Dark2", n_colors=len(grupos_unicos))
+    group_colors = dict(zip(grupos_unicos, group_colors))
 
     line_y = -0.3
     text_y = -0.35
 
-    ax.hlines(y=line_y, xmin=-0.5, xmax=n_control - 0.5,
-              color=group_colors['controle'], linewidth=5,
-              transform=ax.get_xaxis_transform(), clip_on=False)
-    ax.text(x=(n_control - 1) / 2, y=text_y, s='Controle',
-            ha='center', va='center', transform=ax.get_xaxis_transform())
-
-    if n_control < n_samples:
-        ax.hlines(y=line_y, xmin=n_control - 0.5, xmax=n_samples - 0.5,
-                  color=group_colors['endo'], linewidth=5,
+    start = -0.5
+    for grupo in grupos_unicos:
+        n = (groups_sorted == grupo).sum()
+        end = start + n
+        ax.hlines(y=line_y, xmin=start, xmax=end - 0.5,
+                  color=group_colors[grupo], linewidth=5,
                   transform=ax.get_xaxis_transform(), clip_on=False)
-        ax.text(x=n_control + (n_samples - n_control - 1) / 2, y=text_y, s='Endometriose',
+        ax.text(x=start + (n - 1) / 2, y=text_y, s=grupo,
                 ha='center', va='center', transform=ax.get_xaxis_transform())
+        start = end
 
-    #ax.set_title(f"Composição Taxonômica ({nivel}) - {artigo}")
     ax.set_ylabel("Abundância Relativa")
     ax.set_xlabel("")
     ax.set_ylim(0, 1)
     ax.tick_params(axis='x', rotation=90)
     ax.legend(bbox_to_anchor=(1.05, 1), loc='upper left', title=f"Taxa ({nivel})")
-
     plt.subplots_adjust(bottom=0.3)
     plt.show()
     
@@ -245,6 +182,7 @@ def teste_estatistico(df, teste, coluna_grupo, coluna_valor):
         })
 
     return resultados
+
 
 def alfa_diversidade(artigo, teste='u', coluna_grupo='group', coluna_valor='shannon_entropy', grupo_controle='controle', map_labels=map_labels):
     
@@ -439,7 +377,7 @@ def beta_diversidade(artigo, coluna_grupo='group', grupo_controle='controle', ma
     return fig, ax, permanova_result
 
     
-def vias_metabolicas(artigo):
+def vias_metabolicas_heatmap(artigo):
     
     if artigo in vaginal:
         microbiota = 'vaginal'
@@ -477,48 +415,114 @@ def vias_metabolicas(artigo):
     
     return g
 
-def clr_transform(df):
+# def clr_transform(df):
     
-    df = df + 1 
-    log_df = np.log(df)
-    gm = log_df.mean(axis=0)
+#     df = df + 1 
+#     log_df = np.log(df)
+#     gm = log_df.mean(axis=0)
     
-    return log_df.sub(gm, axis=1)
+#     return log_df.sub(gm, axis=1)
 
 
-def abundancia_funcional(artigo, coluna_grupo='group'):
+# def analise_diferencial_abundancia(artigo, coluna_grupo='group', p_adjust_method='fdr_bh', feature_level="Táxon", nivel='genero'):
     
-    if artigo in vaginal:
-        microbiota = 'vaginal'
-    elif artigo in intestinal:
-        microbiota = 'intestinal'
-    else:
-        raise ValueError(f"Artigo '{artigo}' não identificado em vaginal ou intestinal.")
-
-    table = pd.read_csv(f"{microbiota}/{artigo}/taxonomia_{artigo}.csv", index_col=0)
-    meta = pd.read_csv(f"{microbiota}/{artigo}/{artigo}_metadata.tsv", sep='\t', index_col=0)
-    table = table.drop(columns=['group'])
-    table = table.T
-
-    clr_table = clr_transform(table)
+#     if artigo in vaginal:
+#         microbiota = 'vaginal'
+#     elif artigo in intestinal:
+#         microbiota = 'intestinal'
+#     else:
+#         raise ValueError(f"Artigo '{artigo}' não identificado em listas de microbiota.")
+        
+#     table = pd.read_csv(f"{microbiota}/{artigo}/taxonomia_{artigo}.csv", index_col=0)
+#     meta = pd.read_csv(f"{microbiota}/{artigo}/{artigo}_metadata.tsv", sep='\t', index_col=0)
     
-    grupos = meta[coluna_grupo].unique()
-
-    results = []
-    for genus in clr_table.index:
-        group1 = clr_table.loc[genus, meta[meta[coluna_grupo]=="endo"].index]
-        group2 = clr_table.loc[genus, meta[meta[coluna_grupo]=="controle"].index]
-        stat, p = mannwhitneyu(group1, group2, alternative="two-sided")
-        results.append([genus, p])
-
-    res_df = pd.DataFrame(results, columns=["Gênero", "p-valor"])
-    res_df["FDR"] = res_df["p-valor"] * len(res_df) 
-    res_df = res_df.sort_values("p-valor")
-
-    return res_df
-
-def analise_diferencial_abundancia(artigo, coluna_grupo='group', p_adjust_method='fdr_bh', feature_level="Táxon", nivel='genero'):
+#     nivel_map = {
+#         "filo": "p__", "classe": "c__", "ordem": "o__",
+#         "familia": "f__", "genero": "g__"
+#     }
     
+#     prefixo = nivel_map.get(nivel)
+#     if not prefixo:
+#         raise ValueError(f"Nível taxonômico '{nivel}' não reconhecido.")
+
+#     def extrair_nivel(taxon):
+#         if pd.isna(taxon): return "NA"
+#         partes = str(taxon).split(";")
+#         for p in partes[::-1]:
+#             p = p.strip() # Limpa espaços em branco
+#             if p.startswith(prefixo):
+#                 return p
+#         return "NA"
+    
+#     table.columns = table.columns.map(extrair_nivel)
+
+#     table = table.groupby(by=table.columns, axis=1).sum()
+
+#     if 'NA' in table.columns:
+#         table = table.drop(columns=['NA'])
+#     if 'group' in table.columns:
+#         table = table.drop(columns=['group'])
+
+#     table = table.T
+    
+#     amostras_comuns = table.columns.intersection(meta.index)
+#     table = table[amostras_comuns]
+#     meta = meta.loc[amostras_comuns]
+
+#     clr_table = clr_transform(table)
+    
+#     grupos = meta[coluna_grupo].unique()
+
+#     if len(grupos) > 2:
+#         kruskal_results = []
+#         for feature in clr_table.index:
+#             dados_por_grupo = [clr_table.loc[feature, meta[meta[coluna_grupo] == g].index].dropna() for g in grupos]
+#             if any(len(d) < 1 for d in dados_por_grupo): continue
+#             stat, p = kruskal(*dados_por_grupo)
+#             kruskal_results.append({feature_level: feature, 'statistic_kruskal': stat, 'p_kruskal': p})
+        
+#         res_kruskal_df = pd.DataFrame(kruskal_results)
+        
+#         clr_table_transposed = clr_table.T
+#         clr_table_transposed[coluna_grupo] = meta[coluna_grupo]
+        
+#         p_values_dunn = sp.posthoc_dunn(clr_table_transposed, val_col=clr_table.index.tolist(), group_col=coluna_grupo, p_adjust=p_adjust_method)
+        
+#         p_values_dunn.columns.name = feature_level
+#         p_values_dunn.index.name = "grupo1"
+#         p_values_dunn = p_values_dunn.stack().reset_index(name='p_valor_ajustado')
+#         p_values_dunn.rename(columns={'level_1': 'grupo2'}, inplace=True)
+        
+#         return res_kruskal_df, p_values_dunn
+
+#     elif len(grupos) == 2:
+#         results = []
+#         grupo1_nome, grupo2_nome = grupos[0], grupos[1]
+        
+#         for feature in clr_table.index:
+#             grupo1_data = clr_table.loc[feature, meta[meta[coluna_grupo] == grupo1_nome].index]
+#             grupo2_data = clr_table.loc[feature, meta[meta[coluna_grupo] == grupo2_nome].index]
+            
+#             if grupo1_data.empty or grupo2_data.empty: continue
+            
+#             stat, p = mannwhitneyu(grupo1_data, grupo2_data, alternative="two-sided")
+#             results.append([feature, stat, p])
+
+#         res_df = pd.DataFrame(results, columns=[feature_level, "statistic", "p-valor"])
+        
+#         if not res_df.empty:
+#             res_df.dropna(subset=['p-valor'], inplace=True)
+#             reject, pvals_corrected, _, _ = multipletests(res_df["p-valor"], alpha=0.05, method=p_adjust_method)
+#             res_df["p-valor_ajustado"] = pvals_corrected
+#             res_df["significativo"] = reject
+        
+#         res_df = res_df.sort_values("p-valor")
+        
+#         return res_df
+    
+    
+def vias_metabolicas(artigo, top_n=10):
+
     if artigo in vaginal:
         microbiota = 'vaginal'
     elif artigo in intestinal:
@@ -526,89 +530,70 @@ def analise_diferencial_abundancia(artigo, coluna_grupo='group', p_adjust_method
     else:
         raise ValueError(f"Artigo '{artigo}' não identificado em listas de microbiota.")
         
-    table = pd.read_csv(f"{microbiota}/{artigo}/taxonomia_{artigo}.csv", index_col=0)
-    meta = pd.read_csv(f"{microbiota}/{artigo}/{artigo}_metadata.tsv", sep='\t', index_col=0)
+    func_path = f"{microbiota}/{artigo}/pathway_{artigo}.tsv"
+    meta_path = f"{microbiota}/{artigo}/{artigo}_metadata.tsv"
+
+    data = pd.read_csv(func_path, sep='\t', skiprows=1, index_col=0)
+    data = data.T
+    data = data.apply(pd.to_numeric, errors="coerce").fillna(0)
+
+    metadata = pd.read_csv(meta_path, sep='\t', index_col=0)
+
+    if "group" in metadata.columns:
+        metadata.rename(columns={"group": "Group"}, inplace=True)
+    elif "Group" not in metadata.columns:
+        raise ValueError("O metadata precisa ter uma coluna chamada 'group' ou 'Group'.")
+
+    shared_samples = data.index.intersection(metadata.index)
+    data = data.loc[shared_samples]
+    metadata = metadata.loc[shared_samples]
+
+    data_rel = data.div(data.sum(axis=1), axis=0)
+
+    total_abundance = data_rel.sum().sort_values(ascending=False)
+    top_vias = total_abundance.head(top_n).index
+
+    data_plot = data_rel[top_vias].copy()
+
+    outras_vias = total_abundance.index.difference(top_vias)
+    if not outras_vias.empty:
+        data_plot["Outras"] = data_rel[outras_vias].sum(axis=1)
+
+    data_plot["Group"] = metadata["Group"]
+    data_plot = data_plot.sort_values("Group")
+    groups_sorted = data_plot["Group"]
+    data_plot = data_plot.drop(columns=["Group"])
+
+    n_vias = len(data_plot.columns)
+    paleta = sns.color_palette("tab20", n_colors=n_vias)
+
+    fig, ax = plt.subplots(figsize=(14, 7))
+    data_plot.plot(kind="bar", stacked=True, width=0.8, ax=ax, color=paleta)
     
-    nivel_map = {
-        "filo": "p__", "classe": "c__", "ordem": "o__",
-        "familia": "f__", "genero": "g__"
-    }
-    
-    prefixo = nivel_map.get(nivel)
-    if not prefixo:
-        raise ValueError(f"Nível taxonômico '{nivel}' não reconhecido.")
+    grupos_unicos = groups_sorted.unique()
+    group_colors = sns.color_palette("Dark2", n_colors=len(grupos_unicos))
+    group_colors = dict(zip(grupos_unicos, group_colors))
 
-    def extrair_nivel(taxon):
-        if pd.isna(taxon): return "NA"
-        partes = str(taxon).split(";")
-        for p in partes[::-1]:
-            p = p.strip() # Limpa espaços em branco
-            if p.startswith(prefixo):
-                return p
-        return "NA"
-    
-    table.columns = table.columns.map(extrair_nivel)
+    line_y = -0.25  
+    text_y = -0.30
 
-    table = table.groupby(by=table.columns, axis=1).sum()
+    start = -0.5
+    for grupo in grupos_unicos:
+        n = (groups_sorted == grupo).sum()
+        end = start + n
+        ax.hlines(y=line_y, xmin=start, xmax=end - 0.5,
+                  color=group_colors[grupo], linewidth=5,
+                  transform=ax.get_xaxis_transform(), clip_on=False)
+        ax.text(x=start + (n - 1) / 2, y=text_y, s=grupo,
+                ha='center', va='center', transform=ax.get_xaxis_transform())
+        start = end
 
-    if 'NA' in table.columns:
-        table = table.drop(columns=['NA'])
-    if 'group' in table.columns:
-        table = table.drop(columns=['group'])
+    ax.set_ylabel("Abundância Relativa")
+    ax.set_xlabel("")
+    ax.set_ylim(0, 1)
+    ax.tick_params(axis='x', rotation=90)
+    ax.legend(bbox_to_anchor=(1.05, 1), loc='upper left', title="Via metabólica")
+    plt.tight_layout()
+    plt.show()
 
-    table = table.T
-    
-    amostras_comuns = table.columns.intersection(meta.index)
-    table = table[amostras_comuns]
-    meta = meta.loc[amostras_comuns]
-
-    clr_table = clr_transform(table)
-    
-    grupos = meta[coluna_grupo].unique()
-
-    if len(grupos) > 2:
-        kruskal_results = []
-        for feature in clr_table.index:
-            dados_por_grupo = [clr_table.loc[feature, meta[meta[coluna_grupo] == g].index].dropna() for g in grupos]
-            if any(len(d) < 1 for d in dados_por_grupo): continue
-            stat, p = kruskal(*dados_por_grupo)
-            kruskal_results.append({feature_level: feature, 'statistic_kruskal': stat, 'p_kruskal': p})
-        
-        res_kruskal_df = pd.DataFrame(kruskal_results)
-        
-        clr_table_transposed = clr_table.T
-        clr_table_transposed[coluna_grupo] = meta[coluna_grupo]
-        
-        p_values_dunn = sp.posthoc_dunn(clr_table_transposed, val_col=clr_table.index.tolist(), group_col=coluna_grupo, p_adjust=p_adjust_method)
-        
-        p_values_dunn.columns.name = feature_level
-        p_values_dunn.index.name = "grupo1"
-        p_values_dunn = p_values_dunn.stack().reset_index(name='p_valor_ajustado')
-        p_values_dunn.rename(columns={'level_1': 'grupo2'}, inplace=True)
-        
-        return res_kruskal_df, p_values_dunn
-
-    elif len(grupos) == 2:
-        results = []
-        grupo1_nome, grupo2_nome = grupos[0], grupos[1]
-        
-        for feature in clr_table.index:
-            grupo1_data = clr_table.loc[feature, meta[meta[coluna_grupo] == grupo1_nome].index]
-            grupo2_data = clr_table.loc[feature, meta[meta[coluna_grupo] == grupo2_nome].index]
-            
-            if grupo1_data.empty or grupo2_data.empty: continue
-            
-            stat, p = mannwhitneyu(grupo1_data, grupo2_data, alternative="two-sided")
-            results.append([feature, stat, p])
-
-        res_df = pd.DataFrame(results, columns=[feature_level, "statistic", "p-valor"])
-        
-        if not res_df.empty:
-            res_df.dropna(subset=['p-valor'], inplace=True)
-            reject, pvals_corrected, _, _ = multipletests(res_df["p-valor"], alpha=0.05, method=p_adjust_method)
-            res_df["p-valor_ajustado"] = pvals_corrected
-            res_df["significativo"] = reject
-        
-        res_df = res_df.sort_values("p-valor")
-        
-        return res_df
+    return fig, ax
