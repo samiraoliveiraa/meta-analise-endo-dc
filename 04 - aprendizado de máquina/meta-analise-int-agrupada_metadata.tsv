@@ -1,0 +1,737 @@
+sample-id	study_id	disease_group	group
+ERR1331785	cfs_giloteaux2016	SFC	Dor Crônica
+ERR1331792	cfs_giloteaux2016	SFC	Dor Crônica
+ERR1331808	cfs_giloteaux2016	SFC	Dor Crônica
+ERR1331819	cfs_giloteaux2016	SFC	Dor Crônica
+ERR1331820	cfs_giloteaux2016	SFC	Dor Crônica
+ERR1331821	cfs_giloteaux2016	SFC	Dor Crônica
+ERR1331822	cfs_giloteaux2016	SFC	Dor Crônica
+ERR1331823	cfs_giloteaux2016	SFC	Dor Crônica
+ERR1331824	cfs_giloteaux2016	SFC	Dor Crônica
+ERR1331825	cfs_giloteaux2016	SFC	Dor Crônica
+ERR1331826	cfs_giloteaux2016	SFC	Dor Crônica
+ERR1331827	cfs_giloteaux2016	SFC	Dor Crônica
+ERR1331828	cfs_giloteaux2016	SFC	Dor Crônica
+ERR1331831	cfs_giloteaux2016	SFC	Dor Crônica
+ERR1331834	cfs_giloteaux2016	SFC	Dor Crônica
+ERR1331835	cfs_giloteaux2016	SFC	Dor Crônica
+ERR1331836	cfs_giloteaux2016	SFC	Dor Crônica
+ERR1331837	cfs_giloteaux2016	SFC	Dor Crônica
+ERR1331840	cfs_giloteaux2016	SFC	Dor Crônica
+ERR1331841	cfs_giloteaux2016	SFC	Dor Crônica
+ERR1331850	cfs_giloteaux2016	SFC	Dor Crônica
+ERR1331854	cfs_giloteaux2016	SFC	Dor Crônica
+ERR1331855	cfs_giloteaux2016	SFC	Dor Crônica
+ERR1331858	cfs_giloteaux2016	SFC	Dor Crônica
+ERR1331860	cfs_giloteaux2016	SFC	Dor Crônica
+ERR1331862	cfs_giloteaux2016	SFC	Dor Crônica
+ERR1331863	cfs_giloteaux2016	SFC	Dor Crônica
+ERR1331864	cfs_giloteaux2016	SFC	Dor Crônica
+ERR1331865	cfs_giloteaux2016	SFC	Dor Crônica
+ERR1331867	cfs_giloteaux2016	SFC	Dor Crônica
+ERR1331872	cfs_giloteaux2016	SFC	Dor Crônica
+ERR1331786	cfs_giloteaux2016	SFC	Controle
+ERR1331787	cfs_giloteaux2016	SFC	Controle
+ERR1331788	cfs_giloteaux2016	SFC	Controle
+ERR1331789	cfs_giloteaux2016	SFC	Controle
+ERR1331790	cfs_giloteaux2016	SFC	Controle
+ERR1331791	cfs_giloteaux2016	SFC	Controle
+ERR1331793	cfs_giloteaux2016	SFC	Controle
+ERR1331794	cfs_giloteaux2016	SFC	Controle
+ERR1331796	cfs_giloteaux2016	SFC	Controle
+ERR1331797	cfs_giloteaux2016	SFC	Controle
+ERR1331798	cfs_giloteaux2016	SFC	Controle
+ERR1331799	cfs_giloteaux2016	SFC	Controle
+ERR1331802	cfs_giloteaux2016	SFC	Controle
+ERR1331803	cfs_giloteaux2016	SFC	Controle
+ERR1331804	cfs_giloteaux2016	SFC	Controle
+ERR1331805	cfs_giloteaux2016	SFC	Controle
+ERR1331806	cfs_giloteaux2016	SFC	Controle
+ERR1331807	cfs_giloteaux2016	SFC	Controle
+ERR1331809	cfs_giloteaux2016	SFC	Controle
+ERR1331810	cfs_giloteaux2016	SFC	Controle
+ERR1331813	cfs_giloteaux2016	SFC	Controle
+ERR1331814	cfs_giloteaux2016	SFC	Controle
+ERR1331832	cfs_giloteaux2016	SFC	Controle
+ERR1331838	cfs_giloteaux2016	SFC	Controle
+ERR1331839	cfs_giloteaux2016	SFC	Controle
+ERR1331844	cfs_giloteaux2016	SFC	Controle
+ERR1331845	cfs_giloteaux2016	SFC	Controle
+ERR1331846	cfs_giloteaux2016	SFC	Controle
+ERR1331847	cfs_giloteaux2016	SFC	Controle
+ERR1331848	cfs_giloteaux2016	SFC	Controle
+ERR1331849	cfs_giloteaux2016	SFC	Controle
+ERR1331851	cfs_giloteaux2016	SFC	Controle
+ERR1331859	cfs_giloteaux2016	SFC	Controle
+ERR1331866	cfs_giloteaux2016	SFC	Controle
+ERR1331868	cfs_giloteaux2016	SFC	Controle
+ERR1331869	cfs_giloteaux2016	SFC	Controle
+ERR1331870	cfs_giloteaux2016	SFC	Controle
+ERR1331871	cfs_giloteaux2016	SFC	Controle
+ERR2585973	endo_ata2019	Endometriose	Controle
+ERR2585974	endo_ata2019	Endometriose	Controle
+ERR2585975	endo_ata2019	Endometriose	Controle
+ERR2585976	endo_ata2019	Endometriose	Controle
+ERR2585977	endo_ata2019	Endometriose	Controle
+ERR2585978	endo_ata2019	Endometriose	Controle
+ERR2585979	endo_ata2019	Endometriose	Controle
+ERR2585980	endo_ata2019	Endometriose	Controle
+ERR2585981	endo_ata2019	Endometriose	Controle
+ERR2585982	endo_ata2019	Endometriose	Controle
+ERR2585983	endo_ata2019	Endometriose	Controle
+ERR2585984	endo_ata2019	Endometriose	Controle
+ERR2585985	endo_ata2019	Endometriose	Controle
+ERR2585989	endo_ata2019	Endometriose	Controle
+ERR2585962	endo_ata2019	Endometriose	Endometriose
+ERR2585963	endo_ata2019	Endometriose	Endometriose
+ERR2585964	endo_ata2019	Endometriose	Endometriose
+ERR2585965	endo_ata2019	Endometriose	Endometriose
+ERR2585966	endo_ata2019	Endometriose	Endometriose
+ERR2585967	endo_ata2019	Endometriose	Endometriose
+ERR2585968	endo_ata2019	Endometriose	Endometriose
+ERR2585969	endo_ata2019	Endometriose	Endometriose
+ERR2585970	endo_ata2019	Endometriose	Endometriose
+ERR2585971	endo_ata2019	Endometriose	Endometriose
+ERR2585972	endo_ata2019	Endometriose	Endometriose
+ERR2585986	endo_ata2019	Endometriose	Endometriose
+ERR2585987	endo_ata2019	Endometriose	Endometriose
+ERR2585988	endo_ata2019	Endometriose	Endometriose
+SRR13994159	endo_wei2023	Endometriose	Controle
+SRR13994160	endo_wei2023	Endometriose	Controle
+SRR13994161	endo_wei2023	Endometriose	Controle
+SRR13994162	endo_wei2023	Endometriose	Controle
+SRR13994166	endo_wei2023	Endometriose	Controle
+SRR13994177	endo_wei2023	Endometriose	Controle
+SRR13994188	endo_wei2023	Endometriose	Controle
+SRR13994194	endo_wei2023	Endometriose	Controle
+SRR13994195	endo_wei2023	Endometriose	Controle
+SRR13994196	endo_wei2023	Endometriose	Controle
+SRR13994197	endo_wei2023	Endometriose	Controle
+SRR13994198	endo_wei2023	Endometriose	Controle
+SRR13994199	endo_wei2023	Endometriose	Controle
+SRR13994200	endo_wei2023	Endometriose	Controle
+SRR13994201	endo_wei2023	Endometriose	Controle
+SRR13994202	endo_wei2023	Endometriose	Controle
+SRR13994203	endo_wei2023	Endometriose	Controle
+SRR13994204	endo_wei2023	Endometriose	Controle
+SRR13994205	endo_wei2023	Endometriose	Controle
+SRR13994206	endo_wei2023	Endometriose	Controle
+SRR13994207	endo_wei2023	Endometriose	Controle
+SRR13994208	endo_wei2023	Endometriose	Controle
+SRR13994209	endo_wei2023	Endometriose	Controle
+SRR13994210	endo_wei2023	Endometriose	Controle
+SRR13994211	endo_wei2023	Endometriose	Controle
+SRR13994163	endo_wei2023	Endometriose	Endometriose
+SRR13994164	endo_wei2023	Endometriose	Endometriose
+SRR13994165	endo_wei2023	Endometriose	Endometriose
+SRR13994167	endo_wei2023	Endometriose	Endometriose
+SRR13994168	endo_wei2023	Endometriose	Endometriose
+SRR13994169	endo_wei2023	Endometriose	Endometriose
+SRR13994170	endo_wei2023	Endometriose	Endometriose
+SRR13994171	endo_wei2023	Endometriose	Endometriose
+SRR13994172	endo_wei2023	Endometriose	Endometriose
+SRR13994173	endo_wei2023	Endometriose	Endometriose
+SRR13994174	endo_wei2023	Endometriose	Endometriose
+SRR13994175	endo_wei2023	Endometriose	Endometriose
+SRR13994176	endo_wei2023	Endometriose	Endometriose
+SRR13994178	endo_wei2023	Endometriose	Endometriose
+SRR13994179	endo_wei2023	Endometriose	Endometriose
+SRR13994180	endo_wei2023	Endometriose	Endometriose
+SRR13994181	endo_wei2023	Endometriose	Endometriose
+SRR13994182	endo_wei2023	Endometriose	Endometriose
+SRR13994183	endo_wei2023	Endometriose	Endometriose
+SRR13994184	endo_wei2023	Endometriose	Endometriose
+SRR13994185	endo_wei2023	Endometriose	Endometriose
+SRR13994186	endo_wei2023	Endometriose	Endometriose
+SRR13994187	endo_wei2023	Endometriose	Endometriose
+SRR13994189	endo_wei2023	Endometriose	Endometriose
+SRR13994190	endo_wei2023	Endometriose	Endometriose
+SRR13994191	endo_wei2023	Endometriose	Endometriose
+SRR13994192	endo_wei2023	Endometriose	Endometriose
+SRR13994193	endo_wei2023	Endometriose	Endometriose
+ERR2625059	fbm_garcia2019	FBM	Controle
+ERR2625061	fbm_garcia2019	FBM	Controle
+ERR2625063	fbm_garcia2019	FBM	Controle
+ERR2625067	fbm_garcia2019	FBM	Controle
+ERR2625069	fbm_garcia2019	FBM	Controle
+ERR2625071	fbm_garcia2019	FBM	Controle
+ERR2625073	fbm_garcia2019	FBM	Controle
+ERR2625085	fbm_garcia2019	FBM	Controle
+ERR2625087	fbm_garcia2019	FBM	Controle
+ERR2625091	fbm_garcia2019	FBM	Controle
+ERR2625093	fbm_garcia2019	FBM	Controle
+ERR2625095	fbm_garcia2019	FBM	Controle
+ERR2625101	fbm_garcia2019	FBM	Controle
+ERR2625105	fbm_garcia2019	FBM	Controle
+ERR2625109	fbm_garcia2019	FBM	Controle
+ERR2625111	fbm_garcia2019	FBM	Controle
+ERR2625117	fbm_garcia2019	FBM	Controle
+ERR2625121	fbm_garcia2019	FBM	Controle
+ERR2625127	fbm_garcia2019	FBM	Controle
+ERR2625129	fbm_garcia2019	FBM	Controle
+ERR2625145	fbm_garcia2019	FBM	Controle
+ERR2625151	fbm_garcia2019	FBM	Controle
+ERR2625157	fbm_garcia2019	FBM	Controle
+ERR2625159	fbm_garcia2019	FBM	Controle
+ERR2625058	fbm_garcia2019	FBM	Dor Crônica
+ERR2625060	fbm_garcia2019	FBM	Dor Crônica
+ERR2625062	fbm_garcia2019	FBM	Dor Crônica
+ERR2625064	fbm_garcia2019	FBM	Dor Crônica
+ERR2625070	fbm_garcia2019	FBM	Dor Crônica
+ERR2625074	fbm_garcia2019	FBM	Dor Crônica
+ERR2625078	fbm_garcia2019	FBM	Dor Crônica
+ERR2625082	fbm_garcia2019	FBM	Dor Crônica
+ERR2625090	fbm_garcia2019	FBM	Dor Crônica
+ERR2625102	fbm_garcia2019	FBM	Dor Crônica
+ERR2625104	fbm_garcia2019	FBM	Dor Crônica
+ERR2625108	fbm_garcia2019	FBM	Dor Crônica
+ERR2625110	fbm_garcia2019	FBM	Dor Crônica
+ERR2625112	fbm_garcia2019	FBM	Dor Crônica
+ERR2625114	fbm_garcia2019	FBM	Dor Crônica
+ERR2625120	fbm_garcia2019	FBM	Dor Crônica
+ERR2625122	fbm_garcia2019	FBM	Dor Crônica
+ERR2625124	fbm_garcia2019	FBM	Dor Crônica
+ERR2625126	fbm_garcia2019	FBM	Dor Crônica
+ERR2625130	fbm_garcia2019	FBM	Dor Crônica
+ERR2625132	fbm_garcia2019	FBM	Dor Crônica
+ERR2625136	fbm_garcia2019	FBM	Dor Crônica
+ERR2625138	fbm_garcia2019	FBM	Dor Crônica
+ERR2625142	fbm_garcia2019	FBM	Dor Crônica
+ERR2625150	fbm_garcia2019	FBM	Dor Crônica
+ERR2625156	fbm_garcia2019	FBM	Dor Crônica
+ERR2625160	fbm_garcia2019	FBM	Dor Crônica
+ERR2625164	fbm_garcia2019	FBM	Dor Crônica
+ERR2625165	fbm_garcia2019	FBM	Dor Crônica
+ERR2625166	fbm_garcia2019	FBM	Dor Crônica
+ERR2625167	fbm_garcia2019	FBM	Dor Crônica
+ERR2625168	fbm_garcia2019	FBM	Dor Crônica
+ERR2625169	fbm_garcia2019	FBM	Dor Crônica
+ERR2625170	fbm_garcia2019	FBM	Dor Crônica
+ERR2625171	fbm_garcia2019	FBM	Dor Crônica
+ERR2625172	fbm_garcia2019	FBM	Dor Crônica
+ERR2625173	fbm_garcia2019	FBM	Dor Crônica
+ERR2625177	fbm_garcia2019	FBM	Dor Crônica
+ERR2625178	fbm_garcia2019	FBM	Dor Crônica
+ERR2625180	fbm_garcia2019	FBM	Dor Crônica
+ERR2625182	fbm_garcia2019	FBM	Dor Crônica
+ERR2625183	fbm_garcia2019	FBM	Dor Crônica
+ERR2625184	fbm_garcia2019	FBM	Dor Crônica
+ERR2625185	fbm_garcia2019	FBM	Dor Crônica
+ERR2625186	fbm_garcia2019	FBM	Dor Crônica
+ERR2625187	fbm_garcia2019	FBM	Dor Crônica
+ERR2625188	fbm_garcia2019	FBM	Dor Crônica
+ERR2625189	fbm_garcia2019	FBM	Dor Crônica
+ERR2625190	fbm_garcia2019	FBM	Dor Crônica
+ERR2625191	fbm_garcia2019	FBM	Dor Crônica
+ERR2625192	fbm_garcia2019	FBM	Dor Crônica
+ERR2625193	fbm_garcia2019	FBM	Dor Crônica
+ERR2625194	fbm_garcia2019	FBM	Dor Crônica
+ERR2625195	fbm_garcia2019	FBM	Dor Crônica
+ERR2625196	fbm_garcia2019	FBM	Dor Crônica
+ERR2625197	fbm_garcia2019	FBM	Dor Crônica
+ERR2625198	fbm_garcia2019	FBM	Dor Crônica
+ERR2625199	fbm_garcia2019	FBM	Dor Crônica
+ERR2625200	fbm_garcia2019	FBM	Dor Crônica
+ERR2625201	fbm_garcia2019	FBM	Dor Crônica
+ERR2625202	fbm_garcia2019	FBM	Dor Crônica
+ERR2625203	fbm_garcia2019	FBM	Dor Crônica
+ERR2625204	fbm_garcia2019	FBM	Dor Crônica
+ERR2625205	fbm_garcia2019	FBM	Dor Crônica
+ERR2625206	fbm_garcia2019	FBM	Dor Crônica
+ERR2625207	fbm_garcia2019	FBM	Dor Crônica
+ERR2625208	fbm_garcia2019	FBM	Dor Crônica
+ERR2625210	fbm_garcia2019	FBM	Dor Crônica
+ERR2625211	fbm_garcia2019	FBM	Dor Crônica
+SRR8547757	fbm_minerbi2019	FBM	Controle
+SRR8547758	fbm_minerbi2019	FBM	Controle
+SRR8547760	fbm_minerbi2019	FBM	Controle
+SRR8547763	fbm_minerbi2019	FBM	Controle
+SRR8547766	fbm_minerbi2019	FBM	Controle
+SRR8547768	fbm_minerbi2019	FBM	Controle
+SRR8547771	fbm_minerbi2019	FBM	Controle
+SRR8547772	fbm_minerbi2019	FBM	Controle
+SRR8547774	fbm_minerbi2019	FBM	Controle
+SRR8547775	fbm_minerbi2019	FBM	Controle
+SRR8547778	fbm_minerbi2019	FBM	Controle
+SRR8547779	fbm_minerbi2019	FBM	Controle
+SRR8547781	fbm_minerbi2019	FBM	Controle
+SRR8547782	fbm_minerbi2019	FBM	Controle
+SRR8547783	fbm_minerbi2019	FBM	Controle
+SRR8547785	fbm_minerbi2019	FBM	Controle
+SRR8547786	fbm_minerbi2019	FBM	Controle
+SRR8547788	fbm_minerbi2019	FBM	Controle
+SRR8547793	fbm_minerbi2019	FBM	Controle
+SRR8547795	fbm_minerbi2019	FBM	Controle
+SRR8547803	fbm_minerbi2019	FBM	Controle
+SRR8547806	fbm_minerbi2019	FBM	Controle
+SRR8547807	fbm_minerbi2019	FBM	Controle
+SRR8547808	fbm_minerbi2019	FBM	Controle
+SRR8547809	fbm_minerbi2019	FBM	Controle
+SRR8547810	fbm_minerbi2019	FBM	Controle
+SRR8547811	fbm_minerbi2019	FBM	Controle
+SRR8547812	fbm_minerbi2019	FBM	Controle
+SRR8547813	fbm_minerbi2019	FBM	Controle
+SRR8547814	fbm_minerbi2019	FBM	Controle
+SRR8547816	fbm_minerbi2019	FBM	Controle
+SRR8547817	fbm_minerbi2019	FBM	Controle
+SRR8547818	fbm_minerbi2019	FBM	Controle
+SRR8547819	fbm_minerbi2019	FBM	Controle
+SRR8547820	fbm_minerbi2019	FBM	Controle
+SRR8547821	fbm_minerbi2019	FBM	Controle
+SRR8547823	fbm_minerbi2019	FBM	Controle
+SRR8547825	fbm_minerbi2019	FBM	Controle
+SRR8547826	fbm_minerbi2019	FBM	Controle
+SRR8547827	fbm_minerbi2019	FBM	Controle
+SRR8547828	fbm_minerbi2019	FBM	Controle
+SRR8547830	fbm_minerbi2019	FBM	Controle
+SRR8547832	fbm_minerbi2019	FBM	Controle
+SRR8547834	fbm_minerbi2019	FBM	Controle
+SRR8547835	fbm_minerbi2019	FBM	Controle
+SRR8547836	fbm_minerbi2019	FBM	Controle
+SRR8547837	fbm_minerbi2019	FBM	Controle
+SRR8547838	fbm_minerbi2019	FBM	Controle
+SRR8547845	fbm_minerbi2019	FBM	Controle
+SRR8547846	fbm_minerbi2019	FBM	Controle
+SRR8547849	fbm_minerbi2019	FBM	Controle
+SRR8547850	fbm_minerbi2019	FBM	Controle
+SRR8547851	fbm_minerbi2019	FBM	Controle
+SRR8547852	fbm_minerbi2019	FBM	Controle
+SRR8547859	fbm_minerbi2019	FBM	Controle
+SRR8547860	fbm_minerbi2019	FBM	Controle
+SRR8547861	fbm_minerbi2019	FBM	Controle
+SRR8547862	fbm_minerbi2019	FBM	Controle
+SRR8547864	fbm_minerbi2019	FBM	Controle
+SRR8547865	fbm_minerbi2019	FBM	Controle
+SRR8547875	fbm_minerbi2019	FBM	Controle
+SRR8547876	fbm_minerbi2019	FBM	Controle
+SRR8547881	fbm_minerbi2019	FBM	Controle
+SRR8547882	fbm_minerbi2019	FBM	Controle
+SRR8547883	fbm_minerbi2019	FBM	Controle
+SRR8547884	fbm_minerbi2019	FBM	Controle
+SRR8547888	fbm_minerbi2019	FBM	Controle
+SRR8547890	fbm_minerbi2019	FBM	Controle
+SRR8547893	fbm_minerbi2019	FBM	Controle
+SRR8547897	fbm_minerbi2019	FBM	Controle
+SRR8547898	fbm_minerbi2019	FBM	Controle
+SRR8547899	fbm_minerbi2019	FBM	Controle
+SRR8547901	fbm_minerbi2019	FBM	Controle
+SRR8547902	fbm_minerbi2019	FBM	Controle
+SRR8547903	fbm_minerbi2019	FBM	Controle
+SRR8547904	fbm_minerbi2019	FBM	Controle
+SRR8547906	fbm_minerbi2019	FBM	Controle
+SRR8547910	fbm_minerbi2019	FBM	Controle
+SRR8547911	fbm_minerbi2019	FBM	Controle
+SRR8547759	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547761	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547762	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547764	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547765	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547767	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547769	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547770	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547773	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547776	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547777	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547780	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547784	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547787	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547789	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547790	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547791	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547792	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547794	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547796	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547797	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547798	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547799	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547800	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547801	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547802	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547804	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547805	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547815	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547822	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547824	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547829	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547831	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547833	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547839	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547840	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547841	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547842	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547843	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547844	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547847	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547848	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547853	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547854	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547855	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547856	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547857	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547858	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547863	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547866	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547867	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547868	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547869	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547870	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547871	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547872	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547873	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547874	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547877	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547878	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547879	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547880	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547885	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547886	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547887	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547889	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547891	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547892	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547894	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547895	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547896	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547900	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547905	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547907	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547908	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547909	fbm_minerbi2019	FBM	Dor Crônica
+SRR8547912	fbm_minerbi2019	FBM	Dor Crônica
+SRR18588277	ibs_jacobs2023	SII	Controle
+SRR18588288	ibs_jacobs2023	SII	Controle
+SRR18588312	ibs_jacobs2023	SII	Controle
+SRR18588324	ibs_jacobs2023	SII	Controle
+SRR18588325	ibs_jacobs2023	SII	Controle
+SRR18588326	ibs_jacobs2023	SII	Controle
+SRR18588328	ibs_jacobs2023	SII	Controle
+SRR18588330	ibs_jacobs2023	SII	Controle
+SRR18588334	ibs_jacobs2023	SII	Controle
+SRR18588337	ibs_jacobs2023	SII	Controle
+SRR18588338	ibs_jacobs2023	SII	Controle
+SRR18588341	ibs_jacobs2023	SII	Controle
+SRR18588342	ibs_jacobs2023	SII	Controle
+SRR18588346	ibs_jacobs2023	SII	Controle
+SRR18588350	ibs_jacobs2023	SII	Controle
+SRR18588421	ibs_jacobs2023	SII	Controle
+SRR18588422	ibs_jacobs2023	SII	Controle
+SRR18588423	ibs_jacobs2023	SII	Controle
+SRR18588424	ibs_jacobs2023	SII	Controle
+SRR18588425	ibs_jacobs2023	SII	Controle
+SRR18588427	ibs_jacobs2023	SII	Controle
+SRR18588428	ibs_jacobs2023	SII	Controle
+SRR18588436	ibs_jacobs2023	SII	Controle
+SRR18588437	ibs_jacobs2023	SII	Controle
+SRR18588452	ibs_jacobs2023	SII	Controle
+SRR18588469	ibs_jacobs2023	SII	Controle
+SRR18588470	ibs_jacobs2023	SII	Controle
+SRR18588471	ibs_jacobs2023	SII	Controle
+SRR18588472	ibs_jacobs2023	SII	Controle
+SRR18588473	ibs_jacobs2023	SII	Controle
+SRR18588474	ibs_jacobs2023	SII	Controle
+SRR18588475	ibs_jacobs2023	SII	Controle
+SRR18588476	ibs_jacobs2023	SII	Controle
+SRR18588477	ibs_jacobs2023	SII	Controle
+SRR18588478	ibs_jacobs2023	SII	Controle
+SRR18588480	ibs_jacobs2023	SII	Controle
+SRR18588483	ibs_jacobs2023	SII	Controle
+SRR18588484	ibs_jacobs2023	SII	Controle
+SRR18588486	ibs_jacobs2023	SII	Controle
+SRR18588487	ibs_jacobs2023	SII	Controle
+SRR18588488	ibs_jacobs2023	SII	Controle
+SRR18588489	ibs_jacobs2023	SII	Controle
+SRR18588491	ibs_jacobs2023	SII	Controle
+SRR18588492	ibs_jacobs2023	SII	Controle
+SRR18588493	ibs_jacobs2023	SII	Controle
+SRR18588494	ibs_jacobs2023	SII	Controle
+SRR18588495	ibs_jacobs2023	SII	Controle
+SRR18588496	ibs_jacobs2023	SII	Controle
+SRR18588498	ibs_jacobs2023	SII	Controle
+SRR18588499	ibs_jacobs2023	SII	Controle
+SRR18588500	ibs_jacobs2023	SII	Controle
+SRR18588511	ibs_jacobs2023	SII	Controle
+SRR18588512	ibs_jacobs2023	SII	Controle
+SRR18588519	ibs_jacobs2023	SII	Controle
+SRR18588521	ibs_jacobs2023	SII	Controle
+SRR18588522	ibs_jacobs2023	SII	Controle
+SRR18588524	ibs_jacobs2023	SII	Controle
+SRR18588526	ibs_jacobs2023	SII	Controle
+SRR18588529	ibs_jacobs2023	SII	Controle
+SRR18588538	ibs_jacobs2023	SII	Controle
+SRR18588539	ibs_jacobs2023	SII	Controle
+SRR18588545	ibs_jacobs2023	SII	Controle
+SRR18588550	ibs_jacobs2023	SII	Controle
+SRR18588556	ibs_jacobs2023	SII	Controle
+SRR18588557	ibs_jacobs2023	SII	Controle
+SRR18588559	ibs_jacobs2023	SII	Controle
+SRR18588568	ibs_jacobs2023	SII	Controle
+SRR18588576	ibs_jacobs2023	SII	Controle
+SRR18588590	ibs_jacobs2023	SII	Controle
+SRR18588649	ibs_jacobs2023	SII	Controle
+SRR18588652	ibs_jacobs2023	SII	Controle
+SRR18588653	ibs_jacobs2023	SII	Controle
+SRR18588661	ibs_jacobs2023	SII	Controle
+SRR18588662	ibs_jacobs2023	SII	Controle
+SRR18588663	ibs_jacobs2023	SII	Controle
+SRR18588666	ibs_jacobs2023	SII	Controle
+SRR18588667	ibs_jacobs2023	SII	Controle
+SRR18588668	ibs_jacobs2023	SII	Controle
+SRR18588669	ibs_jacobs2023	SII	Controle
+SRR18588677	ibs_jacobs2023	SII	Controle
+SRR18588678	ibs_jacobs2023	SII	Controle
+SRR18588679	ibs_jacobs2023	SII	Controle
+SRR18588683	ibs_jacobs2023	SII	Controle
+SRR18588783	ibs_jacobs2023	SII	Controle
+SRR18588785	ibs_jacobs2023	SII	Controle
+SRR18588787	ibs_jacobs2023	SII	Controle
+SRR18588789	ibs_jacobs2023	SII	Controle
+SRR18588803	ibs_jacobs2023	SII	Controle
+SRR18588822	ibs_jacobs2023	SII	Controle
+SRR18588832	ibs_jacobs2023	SII	Controle
+SRR18588904	ibs_jacobs2023	SII	Controle
+SRR18588905	ibs_jacobs2023	SII	Controle
+SRR18588931	ibs_jacobs2023	SII	Controle
+SRR18588932	ibs_jacobs2023	SII	Controle
+SRR18588934	ibs_jacobs2023	SII	Controle
+SRR18588935	ibs_jacobs2023	SII	Controle
+SRR18588936	ibs_jacobs2023	SII	Controle
+SRR18588937	ibs_jacobs2023	SII	Controle
+SRR18588938	ibs_jacobs2023	SII	Controle
+SRR18588939	ibs_jacobs2023	SII	Controle
+SRR18588941	ibs_jacobs2023	SII	Controle
+SRR18588942	ibs_jacobs2023	SII	Controle
+SRR18588943	ibs_jacobs2023	SII	Controle
+SRR18588944	ibs_jacobs2023	SII	Controle
+SRR18588945	ibs_jacobs2023	SII	Controle
+SRR18588946	ibs_jacobs2023	SII	Controle
+SRR18588947	ibs_jacobs2023	SII	Controle
+SRR18588948	ibs_jacobs2023	SII	Controle
+SRR18588949	ibs_jacobs2023	SII	Controle
+SRR18588950	ibs_jacobs2023	SII	Controle
+SRR18588953	ibs_jacobs2023	SII	Controle
+SRR18588954	ibs_jacobs2023	SII	Controle
+SRR18588955	ibs_jacobs2023	SII	Controle
+SRR18588956	ibs_jacobs2023	SII	Controle
+SRR18588957	ibs_jacobs2023	SII	Controle
+SRR18588958	ibs_jacobs2023	SII	Controle
+SRR18588959	ibs_jacobs2023	SII	Controle
+SRR18588963	ibs_jacobs2023	SII	Controle
+SRR18588965	ibs_jacobs2023	SII	Controle
+SRR18588966	ibs_jacobs2023	SII	Controle
+SRR18588967	ibs_jacobs2023	SII	Controle
+SRR18588969	ibs_jacobs2023	SII	Controle
+SRR18588970	ibs_jacobs2023	SII	Controle
+SRR18588971	ibs_jacobs2023	SII	Controle
+SRR18588979	ibs_jacobs2023	SII	Controle
+SRR18588980	ibs_jacobs2023	SII	Controle
+SRR18588983	ibs_jacobs2023	SII	Controle
+SRR18588984	ibs_jacobs2023	SII	Controle
+SRR18588985	ibs_jacobs2023	SII	Controle
+SRR18588987	ibs_jacobs2023	SII	Controle
+SRR18588988	ibs_jacobs2023	SII	Controle
+SRR18588992	ibs_jacobs2023	SII	Controle
+SRR18588994	ibs_jacobs2023	SII	Controle
+SRR18589018	ibs_jacobs2023	SII	Controle
+SRR18589033	ibs_jacobs2023	SII	Controle
+SRR18589051	ibs_jacobs2023	SII	Controle
+SRR18589069	ibs_jacobs2023	SII	Controle
+SRR18589070	ibs_jacobs2023	SII	Controle
+SRR18589071	ibs_jacobs2023	SII	Controle
+SRR18589072	ibs_jacobs2023	SII	Controle
+SRR18589073	ibs_jacobs2023	SII	Controle
+SRR18589082	ibs_jacobs2023	SII	Controle
+SRR18589083	ibs_jacobs2023	SII	Controle
+SRR18589090	ibs_jacobs2023	SII	Controle
+SRR18588258	ibs_jacobs2023	SII	Dor Crônica
+SRR18588259	ibs_jacobs2023	SII	Dor Crônica
+SRR18588260	ibs_jacobs2023	SII	Dor Crônica
+SRR18588261	ibs_jacobs2023	SII	Dor Crônica
+SRR18588262	ibs_jacobs2023	SII	Dor Crônica
+SRR18588263	ibs_jacobs2023	SII	Dor Crônica
+SRR18588264	ibs_jacobs2023	SII	Dor Crônica
+SRR18588265	ibs_jacobs2023	SII	Dor Crônica
+SRR18588266	ibs_jacobs2023	SII	Dor Crônica
+SRR18588267	ibs_jacobs2023	SII	Dor Crônica
+SRR18588268	ibs_jacobs2023	SII	Dor Crônica
+SRR18588269	ibs_jacobs2023	SII	Dor Crônica
+SRR18588270	ibs_jacobs2023	SII	Dor Crônica
+SRR18588271	ibs_jacobs2023	SII	Dor Crônica
+SRR18588272	ibs_jacobs2023	SII	Dor Crônica
+SRR18588273	ibs_jacobs2023	SII	Dor Crônica
+SRR18588284	ibs_jacobs2023	SII	Dor Crônica
+SRR18588285	ibs_jacobs2023	SII	Dor Crônica
+SRR18588286	ibs_jacobs2023	SII	Dor Crônica
+SRR18588287	ibs_jacobs2023	SII	Dor Crônica
+SRR18588289	ibs_jacobs2023	SII	Dor Crônica
+SRR18588290	ibs_jacobs2023	SII	Dor Crônica
+SRR18588291	ibs_jacobs2023	SII	Dor Crônica
+SRR18588292	ibs_jacobs2023	SII	Dor Crônica
+SRR18588293	ibs_jacobs2023	SII	Dor Crônica
+SRR18588294	ibs_jacobs2023	SII	Dor Crônica
+SRR18588295	ibs_jacobs2023	SII	Dor Crônica
+SRR18588296	ibs_jacobs2023	SII	Dor Crônica
+SRR18588297	ibs_jacobs2023	SII	Dor Crônica
+SRR18588298	ibs_jacobs2023	SII	Dor Crônica
+SRR18588299	ibs_jacobs2023	SII	Dor Crônica
+SRR18588300	ibs_jacobs2023	SII	Dor Crônica
+SRR18588301	ibs_jacobs2023	SII	Dor Crônica
+SRR18588302	ibs_jacobs2023	SII	Dor Crônica
+SRR18588303	ibs_jacobs2023	SII	Dor Crônica
+SRR18588304	ibs_jacobs2023	SII	Dor Crônica
+SRR18588305	ibs_jacobs2023	SII	Dor Crônica
+SRR18588306	ibs_jacobs2023	SII	Dor Crônica
+SRR18588307	ibs_jacobs2023	SII	Dor Crônica
+SRR18588308	ibs_jacobs2023	SII	Dor Crônica
+SRR18588309	ibs_jacobs2023	SII	Dor Crônica
+SRR18588313	ibs_jacobs2023	SII	Dor Crônica
+SRR18588314	ibs_jacobs2023	SII	Dor Crônica
+SRR18588315	ibs_jacobs2023	SII	Dor Crônica
+SRR18588316	ibs_jacobs2023	SII	Dor Crônica
+SRR18588317	ibs_jacobs2023	SII	Dor Crônica
+SRR18588318	ibs_jacobs2023	SII	Dor Crônica
+SRR18588319	ibs_jacobs2023	SII	Dor Crônica
+SRR18588320	ibs_jacobs2023	SII	Dor Crônica
+SRR18588321	ibs_jacobs2023	SII	Dor Crônica
+SRR18588655	ibs_jacobs2023	SII	Dor Crônica
+SRR18588656	ibs_jacobs2023	SII	Dor Crônica
+SRR18588658	ibs_jacobs2023	SII	Dor Crônica
+SRR18588659	ibs_jacobs2023	SII	Dor Crônica
+SRR18588664	ibs_jacobs2023	SII	Dor Crônica
+SRR18588665	ibs_jacobs2023	SII	Dor Crônica
+SRR18588670	ibs_jacobs2023	SII	Dor Crônica
+SRR18588671	ibs_jacobs2023	SII	Dor Crônica
+SRR18588672	ibs_jacobs2023	SII	Dor Crônica
+SRR18588674	ibs_jacobs2023	SII	Dor Crônica
+SRR18588681	ibs_jacobs2023	SII	Dor Crônica
+SRR18588686	ibs_jacobs2023	SII	Dor Crônica
+SRR18588689	ibs_jacobs2023	SII	Dor Crônica
+SRR18588690	ibs_jacobs2023	SII	Dor Crônica
+SRR18588692	ibs_jacobs2023	SII	Dor Crônica
+SRR18588694	ibs_jacobs2023	SII	Dor Crônica
+SRR18588695	ibs_jacobs2023	SII	Dor Crônica
+SRR18588697	ibs_jacobs2023	SII	Dor Crônica
+SRR18588698	ibs_jacobs2023	SII	Dor Crônica
+SRR18588699	ibs_jacobs2023	SII	Dor Crônica
+SRR18588700	ibs_jacobs2023	SII	Dor Crônica
+SRR18588701	ibs_jacobs2023	SII	Dor Crônica
+SRR18588702	ibs_jacobs2023	SII	Dor Crônica
+SRR18588703	ibs_jacobs2023	SII	Dor Crônica
+SRR18588704	ibs_jacobs2023	SII	Dor Crônica
+SRR18588705	ibs_jacobs2023	SII	Dor Crônica
+SRR18588706	ibs_jacobs2023	SII	Dor Crônica
+SRR18588707	ibs_jacobs2023	SII	Dor Crônica
+SRR18588708	ibs_jacobs2023	SII	Dor Crônica
+SRR18588712	ibs_jacobs2023	SII	Dor Crônica
+SRR18588713	ibs_jacobs2023	SII	Dor Crônica
+SRR18588715	ibs_jacobs2023	SII	Dor Crônica
+SRR18588717	ibs_jacobs2023	SII	Dor Crônica
+SRR18588718	ibs_jacobs2023	SII	Dor Crônica
+SRR18588719	ibs_jacobs2023	SII	Dor Crônica
+SRR18588720	ibs_jacobs2023	SII	Dor Crônica
+SRR18588721	ibs_jacobs2023	SII	Dor Crônica
+SRR18588722	ibs_jacobs2023	SII	Dor Crônica
+SRR18588723	ibs_jacobs2023	SII	Dor Crônica
+SRR18588724	ibs_jacobs2023	SII	Dor Crônica
+SRR18588725	ibs_jacobs2023	SII	Dor Crônica
+SRR18588726	ibs_jacobs2023	SII	Dor Crônica
+SRR18588729	ibs_jacobs2023	SII	Dor Crônica
+SRR18588730	ibs_jacobs2023	SII	Dor Crônica
+SRR18588734	ibs_jacobs2023	SII	Dor Crônica
+SRR18588735	ibs_jacobs2023	SII	Dor Crônica
+SRR18588740	ibs_jacobs2023	SII	Dor Crônica
+SRR18588741	ibs_jacobs2023	SII	Dor Crônica
+SRR18588742	ibs_jacobs2023	SII	Dor Crônica
+SRR18588744	ibs_jacobs2023	SII	Dor Crônica
+SRR18588817	ibs_jacobs2023	SII	Dor Crônica
+SRR18588818	ibs_jacobs2023	SII	Dor Crônica
+SRR18588819	ibs_jacobs2023	SII	Dor Crônica
+SRR18588820	ibs_jacobs2023	SII	Dor Crônica
+SRR18588824	ibs_jacobs2023	SII	Dor Crônica
+SRR18588825	ibs_jacobs2023	SII	Dor Crônica
+SRR18588826	ibs_jacobs2023	SII	Dor Crônica
+SRR18588827	ibs_jacobs2023	SII	Dor Crônica
+SRR18588828	ibs_jacobs2023	SII	Dor Crônica
+SRR18588830	ibs_jacobs2023	SII	Dor Crônica
+SRR18588835	ibs_jacobs2023	SII	Dor Crônica
+SRR18588836	ibs_jacobs2023	SII	Dor Crônica
+SRR18588837	ibs_jacobs2023	SII	Dor Crônica
+SRR18588838	ibs_jacobs2023	SII	Dor Crônica
+SRR18588839	ibs_jacobs2023	SII	Dor Crônica
+SRR18588840	ibs_jacobs2023	SII	Dor Crônica
+SRR18588841	ibs_jacobs2023	SII	Dor Crônica
+SRR18588842	ibs_jacobs2023	SII	Dor Crônica
+SRR18588843	ibs_jacobs2023	SII	Dor Crônica
+SRR18588844	ibs_jacobs2023	SII	Dor Crônica
+SRR18588846	ibs_jacobs2023	SII	Dor Crônica
+SRR18588847	ibs_jacobs2023	SII	Dor Crônica
+SRR18588848	ibs_jacobs2023	SII	Dor Crônica
+SRR18588849	ibs_jacobs2023	SII	Dor Crônica
+SRR18588851	ibs_jacobs2023	SII	Dor Crônica
+SRR18588852	ibs_jacobs2023	SII	Dor Crônica
+SRR18588853	ibs_jacobs2023	SII	Dor Crônica
+SRR18588854	ibs_jacobs2023	SII	Dor Crônica
+SRR18588855	ibs_jacobs2023	SII	Dor Crônica
+SRR18588857	ibs_jacobs2023	SII	Dor Crônica
+SRR18588858	ibs_jacobs2023	SII	Dor Crônica
+SRR18588859	ibs_jacobs2023	SII	Dor Crônica
+SRR18588860	ibs_jacobs2023	SII	Dor Crônica
+SRR18588861	ibs_jacobs2023	SII	Dor Crônica
+SRR18588862	ibs_jacobs2023	SII	Dor Crônica
+SRR18588863	ibs_jacobs2023	SII	Dor Crônica
+SRR18588864	ibs_jacobs2023	SII	Dor Crônica
+SRR18588865	ibs_jacobs2023	SII	Dor Crônica
+SRR18588866	ibs_jacobs2023	SII	Dor Crônica
+SRR18588867	ibs_jacobs2023	SII	Dor Crônica
+SRR18588868	ibs_jacobs2023	SII	Dor Crônica
+SRR18588869	ibs_jacobs2023	SII	Dor Crônica
+SRR18588870	ibs_jacobs2023	SII	Dor Crônica
+SRR18588871	ibs_jacobs2023	SII	Dor Crônica
+SRR18588872	ibs_jacobs2023	SII	Dor Crônica
+SRR18588873	ibs_jacobs2023	SII	Dor Crônica
+SRR18588874	ibs_jacobs2023	SII	Dor Crônica
+SRR18588875	ibs_jacobs2023	SII	Dor Crônica
+SRR18588876	ibs_jacobs2023	SII	Dor Crônica
+SRR18588877	ibs_jacobs2023	SII	Dor Crônica
+SRR18589062	ibs_jacobs2023	SII	Dor Crônica
+SRR18589063	ibs_jacobs2023	SII	Dor Crônica
+SRR18589066	ibs_jacobs2023	SII	Dor Crônica
+SRR18589075	ibs_jacobs2023	SII	Dor Crônica
+SRR18589080	ibs_jacobs2023	SII	Dor Crônica
+SRR18589081	ibs_jacobs2023	SII	Dor Crônica
+SRR18589087	ibs_jacobs2023	SII	Dor Crônica
+SRR18589088	ibs_jacobs2023	SII	Dor Crônica
+SRR18589089	ibs_jacobs2023	SII	Dor Crônica
+SRR18589092	ibs_jacobs2023	SII	Dor Crônica
+SRR18589093	ibs_jacobs2023	SII	Dor Crônica
+SRR18589096	ibs_jacobs2023	SII	Dor Crônica
+SRR18589097	ibs_jacobs2023	SII	Dor Crônica
+SRR18589098	ibs_jacobs2023	SII	Dor Crônica
+SRR18589102	ibs_jacobs2023	SII	Dor Crônica
+SRR18589103	ibs_jacobs2023	SII	Dor Crônica
+SRR18589104	ibs_jacobs2023	SII	Dor Crônica
+SRR18589105	ibs_jacobs2023	SII	Dor Crônica
+SRR18589106	ibs_jacobs2023	SII	Dor Crônica
+SRR18589107	ibs_jacobs2023	SII	Dor Crônica
+SRR18589108	ibs_jacobs2023	SII	Dor Crônica
+SRR18589109	ibs_jacobs2023	SII	Dor Crônica
+SRR18589110	ibs_jacobs2023	SII	Dor Crônica
+SRR18589111	ibs_jacobs2023	SII	Dor Crônica
+SRR18589112	ibs_jacobs2023	SII	Dor Crônica
+SRR13247365C	ibs_vork2021	SII	Controle
+SRR13247372C	ibs_vork2021	SII	Controle
+SRR13247410C	ibs_vork2021	SII	Controle
+SRR13247414C	ibs_vork2021	SII	Controle
+SRR13247420C	ibs_vork2021	SII	Controle
+SRR13247432C	ibs_vork2021	SII	Controle
+SRR13247439C	ibs_vork2021	SII	Controle
+SRR13247459C	ibs_vork2021	SII	Controle
+SRR13247464C	ibs_vork2021	SII	Controle
+SRR13247365	ibs_vork2021	SII	Dor Crônica
+SRR13247372	ibs_vork2021	SII	Dor Crônica
+SRR13247410	ibs_vork2021	SII	Dor Crônica
+SRR13247414	ibs_vork2021	SII	Dor Crônica
+SRR13247420	ibs_vork2021	SII	Dor Crônica
+SRR13247432	ibs_vork2021	SII	Dor Crônica
+SRR13247439	ibs_vork2021	SII	Dor Crônica
+SRR13247459	ibs_vork2021	SII	Dor Crônica
+SRR13247464	ibs_vork2021	SII	Dor Crônica
