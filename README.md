@@ -14,7 +14,7 @@ Este repositório contém o pipeline utilizado na meta-análise de estudos de mi
         - ```meta-analise-int/```, ... - diretórios das análises agrupando os estudos.
         - ```silva-data/``` - contém os arquivos necessários para o treinamento dos classificadores taxonômicos.
     - ```shotgun/``` - resultados de análises de metagenômica shotgun
-        - ```etapas``` - contém os scripts ordenados para o processamento de todos as amostra para os estudos.
+        - ```etapas/``` - contém os scripts ordenados para o processamento de todos as amostra para os estudos.
 - ```03 - análises estatísticas/``` - Inclui notebooks e funções utilizadas nas análises estatísticas e de diversidade microbiana.
     - ```amplicon-plots.ipynb``` - notebook principal de geração de gráficos e análises exploratórias.
     - ```funcoes_est.py``` - arquivo com funções para análises estatísticas.
