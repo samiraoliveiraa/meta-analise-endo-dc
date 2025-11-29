@@ -14,10 +14,17 @@ Este repositório contém o pipeline utilizado na meta-análise de estudos de mi
         - ```meta-analise-int/```, ... - diretórios das análises agrupando os estudos.
         - ```silva-data/``` - contém os arquivos necessários para o treinamento dos classificadores taxonômicos.
     - ```shotgun/``` - resultados de análises do sequenciamento metagenômico.
-        - ```etapas/``` - contém os scripts ordenados para o processamento de todos as amostra para os estudos.
+        - ```etapas/``` - contém os scripts ordenados para o processamento de todos as amostras dos estudos.
+        - ```catalogos-genes/``` - contém os catálogos de genes e de proteínas gerados para todos os estudos.
+        - ```tabelas-taxonomia/``` - tabelas de Táxons x Amostras entre Doença (SFC, enxaqueca e fibromialgia) e o Controle. As tabelas estão em abundância bruta e abundância relativa.
+        - ```tabelas-funcional/``` -  tabelas de Ortólogos Kegg (KOs) x Amostras e Vias Metabólicas x Amostras entre Doença (SFC, enxaqueca e fibromialgia) e o Controle. As tabelas estão em abundância bruta, abundância relativa e TPM (Transcritos Por Milhão) calculados. 
 - ```03 - análises estatísticas/``` - Inclui notebooks e funções utilizadas nas análises estatísticas e de diversidade microbiana.
-    - ```amplicon-plots.ipynb``` - notebook principal de geração de gráficos e análises exploratórias.
-    - ```funcoes_est.py``` - arquivo com funções para análises estatísticas.
+    - ```amplicon/``` - resultados de análises do sequenciamento metataxonômico.
+        - ```amplicon-plots.ipynb``` - notebook principal de geração de gráficos e análises exploratórias.
+        - ```funcoes_est.py``` - arquivo com funções para análises estatísticas.
+    - ```shotgun/``` - resultados de análises do sequenciamento metataxonômico.
+        - ```filtros_taxonomia/``` - notebook principal de geração de gráficos e análises exploratórias da taxonomia referente aos metagenomas.
+        - ```filtros_taxonomia/``` - notebook principal de geração de gráficos e análises exploratórias das vias metabólicas e dos ortólogos KEGG referente aos metagenomas.
 - ```04 - aprendizado de máquina/``` - Contém scripts e notebooks voltados à identificação de biomarcadores microbianos por meio de algoritmos de *machine learning*.
   - ```batch-effect-correction.r``` - script contendo a correção de *batch effects*.
   - ```taxonomia_amplicon_corrigida.csv``` e ```taxonomia_shotgun_corrigida.tsv``` - tabelas de abundância após a correção de *batch effetcs*.
