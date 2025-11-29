@@ -1,7 +1,8 @@
 # Da disbiose à dor: meta-análise de perfis microbianos associados à endometriose e à dor crônica com aprendizado de máquina
 
-Este repositório contém o pipeline utilizado na meta-análise de estudos de microbiota (metagenomas - shotgun e metataxonomias - 16S rRNA) relacionados à endometriose e dor crônica. Os diretórios estão organizados conforme as etapas principais do fluxo de trabalho: obtenção de dados, processamento bioinformático, análises estatísticas e aprendizado de máquina.
+Esse projeto refere-se ao Trabalho de Conclusão de Curso do Bacharelado em Ciência e Tecnologia na Ilum Escola de Ciência, faculdade do Centro Nacional de Pesquisa em Energia e Materiais (CNPEM). As autoras principais do projeto e do repositório são as alunas Júlia Amancio Ferreira e Samira de Oliveira Moreira. 
 
+Este repositório contém o pipeline utilizado na meta-análise de estudos de microbiota (metagenomas - shotgun e metataxonomias - 16S rRNA) relacionados à endometriose e dor crônica. Os diretórios estão organizados conforme as etapas principais do fluxo de trabalho: obtenção de dados, processamento bioinformático, análises estatísticas e aprendizado de máquina.
 
 ### Arquivos:
 
