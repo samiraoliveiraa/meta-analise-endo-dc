@@ -8,6 +8,7 @@ Este repositório contém o pipeline utilizado na meta-análise de estudos de mi
 - ```01 - dados/``` — Contém os scripts relacionados à obtenção das amostras utilizadas na meta-análise.
     - ```ids/``` - arquivos .txt com os IDs das amostras de cada estudo incluído.
     - ```arq_dowload.sh``` - script responsável pelo download automático dos dados utilizando os IDs listados acima.
+      
 - ```02 - processamento/``` - Armazena os resultados brutos e intermediários do processamento utilizando ferramentas de bioinformática.
     - ```amplicon/``` - resultados de análises do sequenciamento metataxonômico.
         - ```endo_ata2019/```, ```endo_wei2023/```, ... - diretórios individuais para cada estudo processado.
@@ -17,7 +18,8 @@ Este repositório contém o pipeline utilizado na meta-análise de estudos de mi
         - ```etapas/``` - contém os scripts ordenados para o processamento de todos as amostras dos estudos.
         - ```catalogos-genes/``` - contém os catálogos de genes e de proteínas gerados para todos os estudos.
         - ```tabelas-taxonomia/``` - tabelas de Táxons x Amostras entre Doença (SFC, enxaqueca e fibromialgia) e o Controle. As tabelas estão em abundância bruta e abundância relativa.
-        - ```tabelas-funcional/``` -  tabelas de Ortólogos Kegg (KOs) x Amostras e Vias Metabólicas x Amostras entre Doença (SFC, enxaqueca e fibromialgia) e o Controle. As tabelas estão em abundância bruta, abundância relativa e TPM (Transcritos Por Milhão) calculados. 
+        - ```tabelas-funcional/``` -  tabelas de Ortólogos Kegg (KOs) x Amostras e Vias Metabólicas x Amostras entre Doença (SFC, enxaqueca e fibromialgia) e o Controle. As tabelas estão em abundância bruta, abundância relativa e TPM (Transcritos Por Milhão) calculados.
+          
 - ```03 - análises estatísticas/``` - Inclui notebooks e funções utilizadas nas análises estatísticas e de diversidade microbiana.
     - ```amplicon/``` - resultados de análises do sequenciamento metataxonômico.
         - ```amplicon-plots.ipynb``` - notebook principal de geração de gráficos e análises exploratórias.
@@ -25,6 +27,7 @@ Este repositório contém o pipeline utilizado na meta-análise de estudos de mi
     - ```shotgun/``` - resultados de análises do sequenciamento metataxonômico.
         - ```filtros_taxonomia/``` - notebook principal de geração de gráficos e análises exploratórias da taxonomia referente aos metagenomas.
         - ```filtros_taxonomia/``` - notebook principal de geração de gráficos e análises exploratórias das vias metabólicas e dos ortólogos KEGG referente aos metagenomas.
+          
 - ```04 - aprendizado de máquina/``` - Contém scripts e notebooks voltados à identificação de biomarcadores microbianos por meio de algoritmos de *machine learning*.
   - ```batch-effect-correction.r``` - script contendo a correção de *batch effects*.
   - ```taxonomia_amplicon_corrigida.csv``` e ```taxonomia_shotgun_corrigida.tsv``` - tabelas de abundância após a correção de *batch effetcs*.
